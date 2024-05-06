@@ -1,0 +1,212 @@
+.container {
+  position: relative;
+  background-color: #c2c2af;
+  z-index: 500;
+  line-height: 1.7;
+}
+
+.p-class {
+  font-family: Suisse Regular, sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #3e3e3c;
+}
+
+.li-class {
+  text-align: left;
+  height: auto;
+  overflow: visible;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.link-class {
+  font-family: Suisse Medium, sans-serif;
+  font-weight: 500;
+  color: #3e3e3c;
+  font-size: 1.4rem;
+  margin-left: 0.6rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.link-class:hover {
+  text-decoration: underline;
+}
+
+.shippingBanner {
+  position: relative;
+  z-index: 500;
+}
+
+.inside_shippingBanner {
+  background-color: #252525;
+  height: auto;
+  overflow: visible;
+  padding: 1.2rem 2rem 0.8rem;
+  top: 0;
+  width: 100%;
+}
+
+.banner_content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.banner_btn {
+  background-color: inherit;
+  border: none;
+  color: #fffef2;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: border 0.5s ease;
+}
+
+.banner_btn:hover {
+  border-bottom: 0.1rem solid #fffef2;
+}
+
+.banner_btn svg {
+  fill: #fffef2;
+  margin-left: 2rem;
+  stroke: #fffef2;
+  stroke-width: 0.04rem;
+}
+
+.banner_btn p {
+  flex-grow: 2;
+  font-family: Suisse Regular, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 80px;
+  background-color: #fffef2;
+}
+
+.header_inside {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  line-height: 1.3;
+  justify-content: space-between;
+  padding-right: 3.4rem;
+  padding-left: 3.4rem;
+  background-color: transparent;
+  pointer-events: auto;
+  transition: background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.header_inside nav {
+  display: flex;
+}
+
+.header_inside nav ul {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  list-style-type: none;
+}
+
+.header_inside nav li {
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  border-bottom: 0.2rem solid transparent;
+  margin-right: 2rem;
+  pointer-events: auto;
+  transition: border-bottom-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.header_inside nav button {
+  position: relative;
+  color: #333333;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-family: Suisse Medium, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.header_inside svg {
+  outline: none;
+  fill: #9b9b96;
+  stroke: #9b9b96;
+}
+
+.header_smallScreenSize {
+  background-color: #fffef2;
+  display: none;
+}
+
+.header_smallScreenSize nav {
+  display: flex;
+}
+
+.dropdown-container {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fffef2;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  height: 100vh;
+  width: 100%;
+  background-color: #fffef2;
+  padding: 20px;
+}
+
+.content {
+  padding-top: 135px;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header_smallScreenSize {
+    display: block;
+  }
+  .header_inside {
+    padding-left: 0.4rem;
+  }
+
+  .header_inside nav ul {
+    margin-bottom: 1rem;
+  }
+
+  .header_inside nav li {
+    margin-right: 0rem;
+    margin-top: 1rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .header_inside nav button {
+    font-size: 0.5rem;
+  }
+  .search_icon {
+    height: 9px;
+    width: 9px;
+  }
+  .header_inside nav button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,49 @@
+.form_container {
+  color: #fffef2;
+  line-height: 2;
+  font-family: Suisse, sans-serif;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.line {
+  border-bottom: 1px solid #fffef2;
+}
+
+.form_sub {
+  display: flex;
+  align-items: baseline;
+  font-family: Suisse, sans-serif;
+  position: relative;
+}
+
+.form_sub input {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-width: 0.1rem;
+  border-style: solid;
+  margin: 0;
+  appearance: none;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.form_sub label {
+  margin-left: 1rem;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    margin: 16px 0;
+  }
+}

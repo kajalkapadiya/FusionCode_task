@@ -1,0 +1,179 @@
+.LatPart {
+  background-color: #fffef2;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  flex-wrap: wrap-reverse;
+}
+
+.LatPart_inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 2rem;
+  width: 38%;
+  padding-left: 14rem;
+  padding-right: 34rem;
+}
+
+.LatPart_inner p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 3rem;
+  color: #333;
+  white-space: pre-wrap;
+  font-family: Suisse, sans-serif;
+  overflow-wrap: break-word;
+}
+
+.LatPart_inner h3 {
+  color: #333333;
+  font-size: 1.4rem;
+  font-family: Suisse sans-serif;
+  margin: 0 0 1.5rem;
+}
+
+.LatPart_inner h2 {
+  color: #333333;
+  font-size: 3rem;
+  font-family: Suisse sans-serif;
+  margin: 0 0 1.5rem;
+}
+
+.lastPart_img {
+  width: 30%;
+}
+
+.lastPart_img img {
+  width: 100%;
+}
+
+.LatPart_inner p {
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: Suisse sans-serif;
+  margin: 0 0 3rem;
+}
+
+.LatPart_inner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.LatPart_inner a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.4rem;
+  font-family: Suisse sans-serif;
+  padding: 1.9rem 0 1.9rem 0;
+}
+
+.quote {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  color: #333333;
+  background-color: #fffef2;
+}
+
+.quote blockquote {
+  padding: 0;
+  margin: 0 0 20px;
+  width: 45%;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.33;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.quote cite {
+  display: block;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-style: normal;
+  line-height: 2;
+}
+
+.quote_outerPart {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f5e8;
+  align-items: center;
+}
+
+.quote_innerPart {
+  flex: "1";
+  margin-right: 1rem;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+.quote_innerPart h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.quote_innerPart p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 768px) {
+  .LatPart {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+  }
+  .lastPart_img {
+    width: 100%;
+    order: 1;
+  }
+  .lastPart_img img {
+    padding-right: 10rem;
+  }
+  .LatPart {
+    padding-right: 0;
+  }
+  .LatPart_inner {
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  .quote {
+    height: 100vh;
+  }
+  .quote blockquote {
+    width: 90%;
+  }
+  .quote_outerPart {
+    flex-wrap: wrap-reverse;
+  }
+  .quote cite {
+    font-size: 1rem;
+  }
+  .quote_innerPart {
+    padding: 2rem;
+    text-align: left;
+  }
+  .quote_innerPart p {
+    font-size: 1.6rem;
+  }
+}
