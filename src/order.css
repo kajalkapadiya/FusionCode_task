@@ -1,0 +1,9 @@
+.order {
+  color: #fffef2;
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .order {
+    font-size: 1rem;
+  }
+}

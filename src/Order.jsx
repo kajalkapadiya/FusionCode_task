@@ -1,10 +1,11 @@
 import React from "react";
 import RightUpArrow from "./assets/RightUpArrow";
+import "./order.css";
 
 const Order = () => {
   return (
     <>
-      <h3 style={{ color: "#fffef2", fontSize: "2rem" }}>Orders and support</h3>
+      <h3 className="order">Orders and support</h3>
       <div style={{ borderBottom: "1px solid #fffef2" }}></div>
       <ul style={{ paddingLeft: "0", margin: "0", listStyle: "none" }}>
         <li style={{ paddingTop: "2rem" }}>
